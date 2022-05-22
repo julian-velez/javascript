@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos Javascript</title>
+</head>
+
+<body>
+  <h1>Fundamentos Javascript</h1>
+
+  <script>
+    /*  var hola ="hola mundo";
+      let hello = "hello world";
+      console.log(hola);
+      console.log(hello);
+      console.log(window);
+      console.log(window.hola);
+      console.log(window.hello);*/
+
+    //ambito de bloque
+    //esto es un bloque-comentario de una linea
+    /*esto
+    es
+    un
+    comentario
+    de
+    varias
+    lineas
+    */
+    /* console.log("**********var***************");
+     var musica ="Rock";
+     console.log("variable musica antes del bloque", musica);
+     var musica = "pop";
+     {
+      console.log("variable musica Dentro del bloque", musica);
+     }
+     console.log("variable Musica despues del bloque",musica);
+
+     console.log("**********let***************");
+     let musica2 ="Rock";
+     console.log("variable musica antes del bloque", musica2);
+    
+     {
+      console.log("variable musica Dentro del bloque", musica2);
+     }
+     console.log("variable Musica despues del bloque",musica); */
+
+    let a;
+    const pi = 3.1416;
+    //const NUEVE;
+    console.log(pi);
+    //pi = 3.15;
+
+    a = "julian";
+    console.log(a);
+
+    const objeto = {
+      nombre: "julian",
+      edad: 24
+    }
+
+    const colores = ["blanco", "negro", "azul"];
+    console.log(objeto);
+    console.log(colores);
+
+    objeto.correo = "juliansolo7189@gmaill.com"
+    colores.push("anaranjado");
+
+    console.log(objeto);
+    console.log(colores);
+
+
+
+
+
+
+
+
+    /*cadenas de Texto aka strings*/
+
+    /*    let nombre = "julian";
+        let apellido = 'velez';
+        let saludo = new String("hola mundo");
+        let lorem = "........Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sincem......"
+    
+        console.log(nombre, apellido, saludo);
+        console.log(nombre.length, apellido.length, saludo.length,
+          nombre.toUpperCase(),
+          apellido.toLowerCase(),
+          lorem.includes("dummy"),
+          lorem.includes("julian"),
+          lorem,
+          lorem.trim(),
+          lorem.split(""),
+          lorem.split(","),
+    
+        );*/
+
+
+
+
+
+
+    let nombre = "julian";
+    let apellido = "velez";
+
+    //concatenacion
+    let saludo = "hola mi nombre es " + nombre + " " + apellido + " . "
+    console.log(saludo);
+
+    // interpolacion de variables 
+    // template String
+    let saludo2 = `hola mi nombre es ${nombre} ${apellido}.`
+    console.log(saludo2);
+
+    let ul = "<ul> <li> primavera</li> <li> verano</li><li>otoño</li><li>invierno</li></ul > "
+
+    console.log(ul);
+
+
+
+
+  </script>
+
+</body>
+
+</html>
